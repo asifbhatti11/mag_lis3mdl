@@ -1,2 +1,2 @@
 # mag_lis3mdl
-ROS package for sensor data of LIS3MDL Triple-axis Magnetometer
+ROS package for sensor data of Adafruit LIS3MDL Triple-axis Magnetometer

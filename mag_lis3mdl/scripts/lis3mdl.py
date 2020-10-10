@@ -10,7 +10,9 @@ import adafruit_lis3mdl
 i2c = busio.I2C(board.SCL, board.SDA)
 sensor = adafruit_lis3mdl.LIS3MDL(i2c)
 
-calibration=(0,0,0) # follow https://learn.adafruit.com/adafruit-sensorlab-magnetometer-calibration for calibration and replace calibration values with (0,0,0)
+calibration=(0,0,0) 
+# follow https://learn.adafruit.com/adafruit-sensorlab-magnetometer-calibration 
+# for calibration and replace calibration values with (0,0,0)
 def mag():
     pub = rospy.Publisher('MagneticField', MagneticField, queue_size=10)
     rospy.init_node('MagneticField', anonymous=True)
